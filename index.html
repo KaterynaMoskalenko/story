@@ -27,8 +27,43 @@
             </div>
         </div>
         <button id="btn">get</button>
-        <div class="order-info none ">Успішно придбано товар!</div>
-       
+        <div class="order-info none ">Product selected excellent choice Please fill out the form!</div>
+        <section class="registrForma">
+            <h2 class="registrForma__title">Placing an order</h2>
+            <form action="#" name = 'singin'>        
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="city">City:</label><br>
+                <select id="city" name="city" required>
+                    <option value="">Choose a city:</option>
+                    <option value="Kyiv">Kyiv</option>
+                    <option value="Lviv">Lviv</option>
+                    <option value="Odessa">Odessa</option>
+                </select><br>
+
+                <label for="warehouse">Nova Poshta warehouse for sending:</label><br>
+                <select id="warehouse" name="warehouse" required><br>
+                    <option value="">Choose a warehouse</option>
+                </select><br>
+
+                <label for="payment">Оплата:</label><br>
+                <select id="payment" name="payment" required>
+                    <option value="">Choose a payment method</option>
+                    <option value="cash-on-delivery">Cash</option>
+                    <option value="bank-transfer">Bank trnsfer</option>
+                </select><br>
+
+                <label for="quantity">Quantity of goods:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" required><br>
+
+                <label for="comment">Comment before:</label><br>
+                <textarea id="comment" name="comment" rows="4"></textarea><br>
+
+                <button class="btnBuy" type="button">Buy</button>
+            </form>
+        </section>  
+        <div id="output"></div>     
     </main>
 
     <footer class="footer"></footer>

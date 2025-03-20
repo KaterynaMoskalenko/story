@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
 }
 
 .header {
@@ -12,6 +11,7 @@
   padding: 25px;
   border: 2px solid rgb(47, 0, 255);
   margin: 25px;
+  background-color: #f9f9f9;
 }
 
 .main {
@@ -24,6 +24,7 @@
   gap: 20px;
   margin: 20px;
   flex-wrap: wrap;
+  background-color: #f9f9f9;
 }
 
 .wrapper > div {
@@ -102,4 +103,66 @@ button:hover {
   color: #155724;
   border-radius: 5px;
   display: none; /* Сховано за замовчуванням */
+}
+
+.registrForma {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 9;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* густий ефект тіні */
+  width: 95vw;
+  padding: 10px 50px;
+  margin: 50px auto 0;
+  background-image: url(https://html5book.ru/wp-content/uploads/2017/01/photo-roses.jpg);
+  background-size: cover;
+}
+.registrForma__title {
+  position: relative;
+  margin-top: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+.registrForma label {
+  display: block;
+  padding-left: 15px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.registrForma input, .registrForma select, .registrForma textarea {
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  border-width: 0;
+  line-height: 40px;
+  border-radius: 20px;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+.registrForma textarea {
+  resize: none;
+  overflow: auto;
+  height: 80px;
+}
+.registrForma select {
+  height: 50px;
+}
+.registrForma option {
+  background-color: #817f7f; /* Колір фону для пунктів списку */
+  color: #333; /* Колір тексту */
+  padding: 10px; /* Відступи всередині пунктів */
+}
+.registrForma option:hover {
+  background-color: #494747; /* Зміна кольору при наведенні */
+}
+.registrForma input:focus, .registrForma textarea:focus, .registrForma select:focus {
+  outline: 1px solid #636363; /* Колір рамки при фокусі */
+  background-color: #a6a7a9; /* Зміна кольору фону */
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.5); /* Ефект тіні */
+  border-radius: 24px; /* Додаткове заокруглення */
 }/*# sourceMappingURL=style.css.map */

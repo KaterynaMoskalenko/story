@@ -6,24 +6,30 @@
    
 }
 .header {
-   text-align: center;
+    text-align: center;
     padding: 25px;
-    border: 2px solid rgb(47, 0, 255);
-    margin: 25px;
+    border: 2px solid rgb(193 231 169);
     background-color: #f9f9f9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 .main{
     text-align: center;
+    padding: 80px 20px;
 }
 .wrapper {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 10px;
      margin: 20px;
     flex-wrap: wrap;
     background-color: #f9f9f9;
 }
 .wrapper > div {
+  
     border: 1px solid rgb(67, 63, 63);
     width: 500px;
     min-height: 200px;
@@ -33,6 +39,11 @@
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    div {
+        display: flex;
+        margin: auto;
+        padding-top: 10px;
+    }
 }
 .wrapper > div:hover {
     transform: translateY(-3px);
@@ -69,24 +80,12 @@ h2 {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
 }
-button {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
- button:hover {
-    background-color: #0056b3;
-}
 
 .order-info {
-    margin-top: 20px;
-    padding: 10px;
+    position: absolute;
+    top: 752px;
+    width: 96%;
+    padding: 15px;
     border: 1px solid #28a745;
     background-color: #e6ffed;
     color: #155724;
@@ -166,4 +165,67 @@ button {
     
     }
   
-    
+    .myOrders {
+        margin: 25px;
+    }
+    a.boxShadow4, #btn, .back-button, .remove-btn,.btnBuy {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+        color: rgba(255,255,255,.6);
+        text-shadow: 1px 1px rgba(0,0,0,.3);
+        text-decoration: none;
+        padding: 20px;
+        border-radius: 15px;
+        background: rgb(10,120,10);
+        box-shadow:
+         inset 0 0 3px 1px rgba(0,0,0,.8),
+         inset rgba(0,0,0,.3) -5px -5px 8px 5px,
+         inset rgba(255,255,255,.5) 5px 5px 8px 5px,
+         1px 1px 1px rgba(255,255,255,.1),
+         -2px -2px 5px rgba(0,0,0,.5);
+        transition: .2s;
+      }
+      a.boxShadow4:hover,
+      #btn:hover,
+      .back-button:hover,
+      .remove-btn:hover,
+      .btnBuy:hover {
+        color: rgba(255,255,255,.9);
+        background: rgb(20,130,20);
+      }
+      a.boxShadow4:active,
+      #btn:active,
+      .back-button:active,
+      .remove-btn:active,
+      .btnBuy:active {
+        background: rgb(0,110,0);
+        box-shadow:
+         inset 0 0 5px 3px rgba(0,0,0,.8),
+         inset rgba(0,0,0,.3) -5px -5px 8px 5px,
+         inset rgba(255,255,255,.5) 5px 5px 8px 5px,
+         1px 1px 1px rgba(255,255,255,.2),
+         -2px -2px 5px rgba(0,0,0,.5);
+      }
+
+      //=================== orders
+
+      .order-container {
+        margin-top: 20px;
+        
+      }
+      .order-item {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #f4f4f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .hidden {
+        display: none;
+      }
+
+      .fall {
+        transform: translateY(8rem) rotateZ(20deg);
+        opacity: 0;
+      }
